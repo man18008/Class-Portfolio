@@ -22,3 +22,23 @@ function save1() {
     const name = document.queryselector('name').value;
 }
 
+//displays value 
+function dis(val) 
+{ 
+    document.getElementById("result").value+=val 
+} 
+  
+//evaluates the digit and returns result 
+function solve() 
+{ 
+    let x = document.getElementById("result").value 
+    let y = eval(x) 
+    document.getElementById("result").value = y 
+} 
+  
+//clears the display 
+function clr() 
+{ 
+    document.getElementById("result").value = "" 
+}
+

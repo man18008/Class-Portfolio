@@ -1,0 +1,23 @@
+.title{ 
+    margin-bottom: 10px; 
+    text-align:center; 
+    width: 210px; 
+    color:rgb(80, 69, 221); 
+    border: solid black 2px; 
+} 
+
+input[type="button"] { 
+    background-color:rgb(80, 69, 221); 
+    border: solid black 2px; 
+    width:100% 
+} 
+
+input[type="text"] { 
+    background-color:rgb(178, 175, 218); 
+    border: solid black 2px; 
+    width:auto  
+} 
+
+h1{
+    font-size:4vw;
+}
