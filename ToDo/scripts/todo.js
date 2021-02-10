@@ -55,7 +55,5 @@ function newElement() {
 }
 
 // Keep a count of the number of tasks
-var myNodelist = document.getElementsByTagName("LI");
-var listLength = myNodeList.length;
-document.getElementById("taskCount").innerHTML = listLength;
+
 // Categorize tasks as either active or complete.
