@@ -13,7 +13,7 @@ for (i = 0; i < myNodelist.length; i++) {
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
+  close[i].onclick = function () {
     var div = this.parentElement;
     div.style.display = "none";
   }
@@ -21,7 +21,7 @@ for (i = 0; i < close.length; i++) {
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
+list.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
@@ -36,7 +36,7 @@ function newElement() {
   if (inputValue === '') {
     alert("You must write something!");
   } else {
-    document.getElementById("myUL").appendChild(li);
+    document.getElementById("myul").appendChild(li);
   }
   document.getElementById("myInput").value = "";
 
@@ -47,9 +47,15 @@ function newElement() {
   li.appendChild(span);
 
   for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
+    close[i].onclick = function () {
       var div = this.parentElement;
       div.style.display = "none";
     }
   }
 }
+
+// Keep a count of the number of tasks
+var myNodelist = document.getElementsByTagName("LI");
+var listLength = myNodeList.length;
+document.getElementById("taskCount").innerHTML = listLength;
+// Categorize tasks as either active or complete.
