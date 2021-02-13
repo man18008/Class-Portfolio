@@ -146,6 +146,9 @@ input {
   border-radius: 0;
 }
 
+/* Add background color to buttons hovered over*/
 .addBtn:hover {
   background-color: #bbb;
 }
+
+/* Add task count*/

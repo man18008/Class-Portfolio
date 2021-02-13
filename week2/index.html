@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <!-- <link rel="stylesheet" href="../styles/main.css"> -->
 </head>
 <script src="scripts/week2.js"> </script>
+
 <body>
     <header>
         <div class="dropdown">
@@ -23,59 +25,19 @@
             </div>
             <a href="../ToDo/todo.html">To Do Challenge</a>
             <a href="../index.html">Home</a>
+            <a href="../calculator/index.html">Calculator</a>
         </div>
     </header>
-    <main>
-        <div>
-            <h1>Week 2 Notes/Code Examples</h1>
-            <!-- If your cursor is on a line, all you need to do is hit Ctrl + /    and it will comment or uncomment code. -->
+    <h4>Notes</h4>
+    <div id="paper">
+        <div id="pattern">
+          <div id="content">
+            Dear Diary ... Clifton Hill. 
+            CSS brought to you by https://www.codesdope.com/blog/article/getting-notebook-paper-effect-with-css/
+          </div>
         </div>
-        <div> 
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name">
-        </div>
-        <div>
-            <button>Save</button>
-        </div>
-        </main>
+      </div>
 
-        <div class = title >Calculator</div> 
-      <table border="1"> 
-         <tr> 
-            <td colspan="3"><input type="text" id="result"/></td> 
-            <!-- clear all value -->
-            <td><input type="button" value="c" onclick="clr()"/> </td> 
-         </tr> 
-         <tr> 
-            <!-- display value -->
-            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
-            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
-            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
-            <td><input type="button" value="/" onclick="dis('/')"/> </td> 
-         </tr> 
-         <tr> 
-            <td><input type="button" value="4" onclick="dis('4')"/> </td> 
-            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
-            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
-            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
-         </tr> 
-         <tr> 
-            <td><input type="button" value="7" onclick="dis('7')"/> </td> 
-            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
-            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
-            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
-         </tr> 
-         <tr> 
-            <td><input type="button" value="." onclick="dis('.')"/> </td> 
-            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
-            <!-- evaluate value -->
-            <td><input type="button" value="=" onclick="solve()"/> </td> 
-            <td><input type="button" value="*" onclick="dis('*')"/> </td> 
-         </tr> 
-      </table>
-
-
-    
-    <!-- <script> src="../scripts/main.js"</script> -->
 </body>
+
 </html>
