@@ -4,100 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/week3.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="dropdown">
-            <button class="dropbtn">Weekly Notes</button>
-            <div class="dropdown-content">
+            <div class="sidenav">
                 <a href="../week1/index.html">Week 1</a>
                 <a href="../week2/index.html">Week 2</a>
                 <a href="../week3/index.html">Week 3</a>
                 <a href="../week4/index.html">Week 4</a>
                 <a href="../week5/index.html">Week 5</a>
                 <a href="../week6/index.html">Week 6</a>
+                <a href="../week7/index.html">Week 7</a>
+                <a href="../week8/index.html">Week 8</a>
+                <a href="../week9/index.html">Week 9</a>
+                <a href="../week10/index.html">Week 10</a>
+                <a href="../week11/index.html">Week 11</a>
+                <a href="../week12/index.html">Week 12</a>
+                <a href="../week13/index.html">Week 13</a>
+                <a href="../ToDo/todo.html">To Do Challenge</a>
+                <a href="../index.html">Home</a>
+                <a href="../calculator/index.html">Calculator</a>
             </div>
-            <a href="../ToDo/todo.html">To Do Challenge</a>
-            <a href="../index.html">Home</a>
-            <a href="../calculator/index.html">Calculator</a>
-        </div>
     </header>
-    <p>
-        ctrl + j opens the command prompt
-        QUESTION:
-        How do I get my link "https://man18008.github.io/Portfolio/" to work? I have submitted a different link.
-        SOLVED! I was able to make this link work. I'm not actually sure what changed.
-        
-         
-        <!-- <!DOCTYPE html>
-             Notes:
-
-             ARRAYS
-
-            topScope.array = (...values) => values;
-
-            topScope.length = array => array.length;
-
-            topScope.element = (array, i) => array[i];
-
-            run(`
-            do(define(sum, fun(array,
-                do(define(i, 0),
-                    define(sum, 0),
-                    while(<(i, length(array)),
-                    do(define(sum, +(sum, element(array, i))),
-                        define(i, +(i, 1)))),
-                    sum))),
-            print(sum(array(1, 2, 3))))
-            `);
-            // → 6
-
-            COMMENTS
-            function skipSpace(string) {
-            let skippable = string.match(/^(\s|#.*)*/);
-            return string.slice(skippable[0].length);
-            }
-
-            console.log(parse("# hello\nx"));
-            // → {type: "word", name: "x"}
-
-            console.log(parse("a # one\n   # two\n()"));
-            // → {type: "apply",
-            //    operator: {type: "word", name: "a"},
-            //    args: []}
-
-            FIXING SCOPE 
-            specialForms.set = (args, env) => {
-            if (args.length != 2 || args[0].type != "word") {
-                throw new SyntaxError("Bad use of set");
-            }
-            let varName = args[0].name;
-            let value = evaluate(args[1], env);
-
-            for (let scope = env; scope; scope = Object.getPrototypeOf(scope)) {
-                if (Object.prototype.hasOwnProperty.call(scope, varName)) {
-                scope[varName] = value;
-                return value;
-                }
-            }
-            throw new ReferenceError(`Setting undefined variable ${varName}`);
-            };
-
-            run(`
-            do(define(x, 4),
-            define(setx, fun(val, set(x, val))),
-            setx(50),
-            print(x))
-            `);
-            // → 50
-            run(`set(quux, true)`);
-            // → Some kind of ReferenceError
-            </html> -->
-    </p>
-    <main></main>
-    <footer></footer>
-    <script src="scripts/main.js"> </script>
+    <div class="main">
+    <div class="container">
+  <div class="jumbotron">
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this responsive page to see the effect!</p> 
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>
